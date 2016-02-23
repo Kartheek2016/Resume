@@ -1,0 +1,170 @@
+{
+  "basics": {
+    "name": "C. KUMARA KARTHEEK",
+    "label": "Application Developer",
+    "picture": "https://raw.githubusercontent.com/Kartheek2016/kartheek2016.github.io/master/kartheek.jpg",
+    "email": "chilvery.kartheek@gmail.com",
+    "phone": "+91 9030012044",
+    "website": "http://kartheek2016.github.io/",
+    "carrer_objective": "Being in pursuit of challenging position as a Java Developer in an esteemed organization, as I have the analytical & logical skills relevant for this job. I see myself as the Project Leader in a couple of years down the line.",
+    "location": {
+      "address": "",
+      "postalCode": "500 029",
+      "city": "Hyderabad",
+      "countryCode": "INDIA",
+      "region": "Telangana"
+    },
+    "profiles": [
+      {
+        "network": "Facebook",
+        "username": "Kartheek Netha",
+        "url": "http://www.facebook.com/Kartheek.Netha"
+      },
+      {
+        "network": "google-plus",
+        "username": "Kartheek Netha",
+        "url": "http://www.plus.google.com/u/1/104314243493927927963"
+      },
+      {
+        "network": "Linkedin",
+        "username": "Kumara Kartheek",
+        "url": "https://www.linkedin.com/in/kumara-kartheek-ab315861?trk=nav_responsive_tab_profile_pic"
+      },
+      {
+        "network": "Github",
+        "username": "Chilvery Kumara Kartheek",
+        "url": "https://github.com/Kartheek2016"
+      }
+    ]
+  },
+  "academic_qualifications": [
+    {
+      "qualification": "Bachelor of Engineering",
+      "specialization": "Electronics & Communication Engineering",
+      "university_Board": "Osmania University",
+      "college": "Methodist College of Engineering & Technology, HYD.",
+      "year_of_study": "2011 - 2015",
+      "percentage": "63%"
+    },
+    {
+      "qualification": "Intermediate",
+      "specialization": "Maths, Physics & Chemistry",
+      "university_Board": "Board of Intermedaite",
+      "college": "Sri Chaitanya Jr Kalasala, HYD.",
+      "year_of_study": "2009 - 2011",
+      "percentage": "83%"
+    },
+    {
+      "qualification": "SSC",
+      "specialization": "Higher Education",
+      "university_Board": "BORAD OF SECONDARY EDUACTION",
+      "college": "The Indo English High School, HYD.",
+      "year_of_study": "2008 - 2009",
+      "percentage": "67%"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming languages",
+      "level": "",
+      "keywords": [
+	"Java"
+      ]
+    },
+    {
+      "name": "Software packages",
+      "level": "",
+      "keywords": [
+	"PGDCA"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+	"jQuery",
+	"Bootstrap"
+      ]
+    },
+    {
+      "name": "DBMS",
+      "level": "",
+      "keywords": [
+	"MySQL"
+      ]
+    },
+    {
+      "name": "Tools",
+      "level": "",
+      "keywords": [
+	"MAT Lab",
+        "Keil μvision",
+        "Active-HDL",
+        "Xilinx"
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "level": "",
+      "keywords": [
+	"Windows",
+        "Linux"
+      ]
+    }
+  ],
+  "academic_projects":{
+      "major_project":{
+        "title":"Implementation and Synthesis of ATM Transaction Controller",
+        "tool":"Xilinx 13.2",
+        "team_size":"2 members",
+        "my_role":"Coding & Documentation.",
+        "description":"The objective of this project is to enhance the security of ATM by involving the mobile of the customer. The second objective is the customer is shown denominations of various kinds so that he would have an idea of the amount he can withdraw without any problem."
+      },
+      "mini_project":{
+        "title":"Path Follower",
+        "team_size":"3 members",
+        "my_role":"Coding & Documentation.",
+        "description":"After analyzing the full information about the project which I have chosen, I would like to check the number of possibilities of coding a program as simple as possible. According to the project, path follower is nothing but the robot which is developed should follow the black path according to the code."
+  }
+  },
+  "interests": [
+    {
+      "name": "Music",
+      "keywords": [
+        "Aucostic Guitar"
+      ]
+    },
+    {
+      "name": "Games",
+      "keywords": [
+        "Computer games",
+        "Xbox"
+      ]
+    }
+  ],
+  "personal_strengths":[
+       "Good Communication Skills",
+       "Adaptable & Sportive",
+       "Quick Learner"
+  ],
+  "personal_details": {
+         "Father's_Name": "C. VENKATESHWAR",
+         "date_of_birth": "21 Nov, 1994",
+         "Religion": "Hindu",
+         "languages_known": [
+           "English",
+           "Hindi",
+           "Telugu"
+         ],
+         "passport": "Available"
+  },
+  "references": [
+    {
+      "name": "Vikram Manohar",
+      "reference": "It is my pleasure to recommend Kartheek, his performance working as a IEEE - Treasurer for MCET - IEEE - SB proved that he will be a valuable addition to any company."
+    }
+  ]
+}

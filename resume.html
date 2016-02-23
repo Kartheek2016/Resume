@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>C. Kumara Kartheek</title>
+		<link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="/bower_components/bootstrap/dist/js/bootstrap.min.js" rel="stylesheet" media="screen">
+		<link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+		<script src="/bower_components/angular/angular.min.js"></script>
+		<script src="/bower_components/ng-lodash/build/ng-lodash.min.js"></script>
+                <script src="/js/Modules/app.js"></script>
+                <script src="/js/Models/service.js"></script>
+		<script src="/js/Controllers/controller.js"></script>
+	</head>
+	<body>
+		<div ng-app="resume" ng-controller="controller">
+			<div class="container">
+				<div class="jumbotron">
+					<div class="page-header">
+						<img class="img-circle pull-right" alt="Kartheek Netha" title="Kartheek Netha" width="200" height="200" ng-src={{obj.data.basics.picture}}>
+						<h1><mark><strong>{{obj.data.basics.name}}</strong></mark></h1>
+						<h3>{{obj.data.basics.label}}</h3>
+					</div>
+					<blockquote><div class="text-md" style="width:100%">
+						<div>{{obj.data.basics.location.city}}, {{obj.data.basics.location.region}}, {{obj.data.basics.location.countryCode}}, {{obj.data.basics.location.postalCode}}.</div>
+						<div>{{obj.data.basics.phone}}</div>
+						<div>{{obj.data.basics.email}}</div>
+						<a ng-href={{obj.data.basics.website}}>{{obj.data.basics.website}}</a>
+					</div></blockquote>
+				</div>
+				<h2>CAREER OBJECTIVE</h2>
+				<h4>{{obj.data.basics.carrer_objective}}</h4>
+				<hr>
+				<!--<div>
+					<h2 ng-repeat="(key, val) in obj.data | limitTo:1">{{key | uppercase}}</h2>
+				</div>-->
+				<table class="table table-bordered">
+					<thead>
+						<tr ng-repeat="items in obj.data.academic_qualifications | limitTo:1">
+							<th class="text-center" ng-repeat="(key, val) in items"><span class="text-uppercase">{{key}}</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="edu in obj.data.academic_qualifications">
+				 			<td>{{edu.qualification}}</td>
+				 			<td>{{edu.specialization}}</td>
+				 			<td>{{edu.university_Board}}</td>
+							<td>{{edu.institut}}</td>
+				 			<td class="text-center">{{edu.year_of_study}}</td>
+				 			<td class="text-center">{{edu.percentage}}</td>
+						</tr>
+					</tbody>
+				</table>
+				<hr>
+				<h2>TECHNICAL QUALIFICATIONS</h2>
+				<pre><table>
+					<tr ng-repeat="skills in obj.data.skills | limitTo:2">
+						<td>{{skills.name}}</td>
+						<td>	-	</td>
+						<td ng-repeat="key in skills.keywords"><span class="label label-info">{{key}}</span></td>
+					</tr>
+				</table></pre>
+				<hr>
+				<h2>TECHNICAL SKILLS</h2>
+				<pre><table>
+						<tr ng-repeat="skills in obj.data.skills | limitTo:6:2">
+							<td>{{skills.name}}</td>
+							<td>	-	</td>
+							<td><span ng-repeat="key in skills.keywords"><span width="100px" class="label label-info">{{key}}</span> </span></td>
+						</tr>
+				</table></pre>
+				<hr>
+				<h2>ACADEMIC PROJECTS</h2>
+				<h3>MAJOR PROJECT:</h3>
+				<pre><table>
+						<tr ng-repeat="(key, value) in obj.data.academic_projects.major_project">
+							<td>{{key | uppercase}}</td>
+							<td>	:	</td>
+							<td>{{value}}</td>
+						</tr>
+				</table></pre>
+				<h3>MINI PROJECT:</h3>
+				<pre><table>
+						<tr ng-repeat="(key, value) in obj.data.academic_projects.mini_project">
+							<td>{{key | uppercase}}</td>
+							<td>	:	</td>
+							<td>{{value}}</td>
+						</tr>
+				</table></pre>
+				<hr>
+				<h2>INTERESTS</h2>
+				<pre><table>
+						<tr ng-repeat="int in obj.data.interests">
+							<td>{{int.name}}</td>
+							<td>	:	</td>
+							<td ng-repeat="key in int.keywords">{{key}}</td>
+						</tr>
+				</table></pre>
+				<hr>
+				<h2>PERSONAL STRENGTHS</h2>
+				<ul ng-repeat="strengths in obj.data.personal_strengths">
+					<li>{{strengths}}</li>
+				</ul>
+				<hr>
+				<h2>PERSONAL DETAILS</h2>
+				<pre><table>
+					<tr ng-repeat="(key, value) in obj.data.personal_details">
+						<td>{{key}}</td>
+						<td>	:	</td>
+						<td>{{value}}</td>
+					</tr>
+				</table></pre>
+				<hr>
+				<div class="text-center">
+					<h4>Copyrights : {{obj.data.basics.email}}<h4>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
